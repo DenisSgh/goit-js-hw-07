@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задание 1</title>
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: #fff;
-        color: #424242;
-        line-height: 1.5;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Задание 3</title>
   </head>
   <body>
-    <p><a href="index.html">На главную</a></p>
+    <h2 class="backpage"><a href="index.html">На главную</a></h2>
+
+    <section class="task">
+      <h3 class="title-task">Задание 3</h3>
+
+      <p class="task-text">Напиши скрипт для создания галлереи изображений по массиву данных.</p>
+      <p class="task-text">В HTML есть список <code>ul#gallery.</code>.</p>
+      <p class="task-text">Используй массив объектов <code>images</code> для создания тегов img вложенных в li. Для создания разметки используй шаблонные строки и <code>insertAdjacentHTML()</code>.</p>
+      <div class="task-text">
+        <ul>
+          <li><u>Все элементы галереи должны добавляться в DOM за одну операцию вставки.</u></li>
+          <li><u>Добавь минимальное оформление галереи флексбоксами или гридами через css-классы.</u></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="decision">
+      <ul id="gallery"></ul>
+    </section>
+
     <script src="js/task-03.js" type="module"></script>
   </body>
 </html>
