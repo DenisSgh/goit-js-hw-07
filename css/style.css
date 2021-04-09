@@ -121,16 +121,24 @@ code {
 }
 
 /*! Task 4 */
-#counter button {
+#counter button,
+#controls button {
+  padding: 10px;
   outline: none;
   border: none;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
-#counter button:hover {
+#counter button:hover,
+#controls button:hover {
   background-color: rgb(129, 142, 214);
+}
+
+#counter button:active,
+#controls button:active {
+  background-color: rgb(81, 101, 211);
 }
 
 #value {
@@ -142,7 +150,8 @@ code {
 
 /*! Task 5 */
 #name-input,
-#validation-input {
+#validation-input,
+#controls input {
   padding: 10px;
   font-size: 20px;
 }
@@ -169,4 +178,10 @@ code {
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+/*! Task 8 */
+#boxes {
+  display: flex;
+  margin-top: 15px;
 }
