@@ -1,9 +1,9 @@
 const refs = {
-  input: document.querySelector('#name-input'),
+  input: document
+    .querySelector('#name-input')
+    .addEventListener('input', inputChange),
   nameLabel: document.querySelector('#name-output'),
 };
-
-refs.input.addEventListener('input', inputChange);
 
 function inputChange(event) {
   !event.currentTarget.value
